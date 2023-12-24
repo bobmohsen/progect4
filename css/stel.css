@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bs-blue: #0d6efd;
+       --bs-indigo: #6610f2;
+       --bs-purple: #6f42c1;
+       --bs-pink: #d63384;
+       --bs-red: #dc3545;
+       --bs-orange: #fd7e14;
+       --bs-yellow: #ffc107;
+       --bs-green: #198754;
+       --bs-teal: #20c997;
+       --clar-wet: whitesmoke;
+       --abs:100vh
+   }
+body{
+    transition: 0.5s;
+background-color: var(--bs-blue);
+    overflow-x: hidden;
+}
+
+.content{
+    width: 1000px;
+    margin: auto;
+    overflow-x: hidden;
+
+}
+@media (max-width: 767px){
+    .content{
+        width: 200px;
+        
+        overflow-x: hidden;
+    
+        
+    }
+  }
+.content h1{
+    text-transform: uppercase;
+    color:var(--bs-yellow);
+    
+}
+.content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    width: 74%;
+    background-color: var(--bs-indigo);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px){
+    .content header {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        gap: 20px;
+        position: relative;
+        position: fixed;
+        width: 85%;
+        background-color: var(--bs-indigo);
+        padding: 6px;
+        border-radius: 10px;
+        margin-left: -71px;
+        border-radius: 11%;
+        padding: 11px;
+    }
+    
+}
+.shoppeng img{
+    width: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 767px){
+    .shoppeng img{
+        position: absolute;
+        right: 10px;
+        top: 29px;
+    }
+
+  }
+
+.shoppeng .quonted{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background-color: red;
+    padding: 2px 4px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+
+}
+@media (max-width: 767px){
+
+        .shoppeng img {
+            position: absolute;
+            right: 4px;
+            top: 19px;}
+
+    }
+
+.content .liast{ /*دي الي ماسكه الي فيهم الكروت في الصفحه */
+display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    margin-top: 50px;
+    padding-top: 21px;
+
+}
+
+@media (max-width: 767px){
+    .content .liast{ /*دي الي ماسكه الي فيهم الكروت في الصفحه */
+        display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(151px,1fr));
+    gap: 10px;
+    margin-top: 48px;
+    padding-top: 60px;
+}
+}
+.bob{
+    background-color: rgb(255, 0, 21);
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.card{
+    background-color: var(--bs-indigo);
+    position: fixed;
+    width: 300px;
+    top: 79px;
+    z-index: 10px;
+    right: calc(100% -300px);
+    right: 8px;
+    transition: 2s;
+    min-height: 571px;
+    transform: translateX(121%);
+}
+
+.actev .card {
+    transition: 2s;
+    transform: translateX(0);
+
+}
+@media (max-width: 767px){
+    .card{
+        
+        width: 250px;
+        
+    }
+}
+.actev .content{
+    transform: translateX(-200px);
+ }
+.card h2{
+    color: var(--bs-yellow);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bs-orange);
+    width: 100%;
+    height: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+margin-right: 10px;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    margin-top: 15px;
+}
+
+img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+.name{
+    color: var(--bs-yellow);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.press{
+    color: red;
+    font-weight: bold;
+    padding: 0 10px;
+
+}
+.item .del{
+    color: var(--bs-yellow);
+    margin-right: 10px;
+    font-size: 18px;
+}
+/* ده الكلاس بتاع الزرلين الي بيزود وينقص  */
+.add-{
+    font-size: 25px;
+    width: 29px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 1px saddlebrown;
+}
+
+
+.cunt{
+margin: 0 10px;
+color: var(--bs-yellow);
+margin-top: 7px;
+font-weight: bold;
+}
+
+.card .checkOut .total{
+    background-color: white;
+    width: 50%;
+color: blue;
+font-weight: bold;
+font-size: 20px;
+padding: 5px 0;
+text-align: center;
+}
+
+.card .checkOut .clos{
+    background-color: red;
+    width: 50%;
+    font-weight: bold;
+font-size: 20px;
+padding: 5px 0;
+text-align: center;
+color: white;
+cursor: pointer;
+}
+
+.rod{
+    padding-left: 10px;
+    padding-right: 10;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.item{
+    background-color: var(--bs-blue);
+    text-align: center;
+    border-radius: 96px;
+    height: 405px;
+}
+@media (max-width: 767px){
+    .item{
+        height: 300px;
+    
+    }
+    }
+.item img{
+    width: 60%;
+    border-radius: 54%;
+    border: 3px solid var(--bs-orange);
+}
+@media(max-width: 767px){
+    .item img{
+        width: 68%;
+        border-radius: 54%;
+        border: 3px solid var(--bs-orange);
+        height: 37%;
+    }
+
+}
+.item:hover{
+    transform: translateY(-20px);
+transition: 0.5s;
+}
+.item:hover img{
+    transform: scale(1.2);
+    transition: 0.5s;
+
+}
+
+.item .price{
+color: rgb(255, 0, 64);
+font-size: 20px;
+font-weight: bold;
+margin: 5px 0;
+}
+
+.item .btenn{
+    background-color: var(--bs-blue);
+    color: var(--bs-yellow);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 3px 0;
+    border-radius: 21px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+
+.item .btenn:hover{
+    color: var(--bs-blue);
+    background-color: var(--bs-yellow);
+    transition: 0.5s;
+}
+/* الكلاس ده لما ادوس علي الزرار مينفعش ادوس عليه تاني */
+.contenu{
+    background-color: var(--bs-yellow);
+    color: var(--bs-blue);
+opacity: .2;
+pointer-events: none;
+}
+.btn{
+    position: absolute;
+    right: 20px;
+    background-color: var(--bs-indigo);
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--bs-yellow);
+    cursor: pointer;
+    display: none;
+}
+/* ده ماسك الانبت 3الي في المشتريات علشان يجو جنب بعض  */
+.i{ 
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
